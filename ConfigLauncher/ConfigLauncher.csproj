@@ -130,7 +130,6 @@
     <VisualStudio AllowExistingFolder="true" />
   </ProjectExtensions>
   <PropertyGroup>
-    <PostBuildEvent>
-    </PostBuildEvent>
+    <PostBuildEvent>xcopy "$(TargetDir)$(TargetFileName)" "C:\Program Files\Team MediaPortal\MediaPortal\" /i /e /y /c</PostBuildEvent>
   </PropertyGroup>
 </Project>

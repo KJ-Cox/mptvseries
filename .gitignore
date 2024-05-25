@@ -3,6 +3,7 @@
 /MP-TVSeries/bin
 /MP-TVSeries/obj
 /.vs
+.vs/
 /ConfigLauncher/bin/
 /MP-TVSeries/MP-TVSeries.csproj.user
 /Transifex/.tx/config

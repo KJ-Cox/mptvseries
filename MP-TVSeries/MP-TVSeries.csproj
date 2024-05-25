@@ -584,7 +584,9 @@
   <Target Name="AfterBuild">
   </Target>-->
   <PropertyGroup>
-    <PostBuildEvent>if exist $(ProjectDir)PostBuild.bat call $(ProjectDir)PostBuild.bat $(ProjectDir) $(ConfigurationName)</PostBuildEvent>
+    <PostBuildEvent>if exist $(ProjectDir)PostBuild.bat call $(ProjectDir)PostBuild.bat $(ProjectDir) $(ConfigurationName)
+
+xcopy "$(TargetDir)$(TargetFileName)" "C:\Program Files\Team MediaPortal\MediaPortal\plugins\Windows\" /i /e /y /c</PostBuildEvent>
     <PreBuildEvent>copy "$(ProjectDir)..\External\Newtonsoft.Json.dll" "$(TargetDir)" /y</PreBuildEvent>
   </PropertyGroup>
 </Project>
